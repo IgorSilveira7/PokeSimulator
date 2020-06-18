@@ -1,0 +1,55 @@
+
+.infosElement {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input.inputIv {
+    width: 27px;
+}
+
+th.finalStat {
+    width: 30px;
+}
+
+th.spanIv{
+    width: 87px;
+    height: 25px;
+}
+
+button.submitBtn {
+    background-color: black;
+    color: white;
+    border:3px solid black;
+    border-radius: 4px;
+    height: 30px;
+    width: 100px;
+}
+
+button.submitBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border:3px solid black;
+}
+
+div.result {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-areas: 'stats img img';
+}
+
+table.resultTable {
+    grid-area: stats;
+}
+
+img.resultImg {
+    grid-area: img;
+    justify-self: center;
+    height: 11rem;
+    width: 200px;
+    border: solid 4px red;
+    border-radius: 15px;
+    background-color: lightgrey;
+}
