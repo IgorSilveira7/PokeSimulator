@@ -7,7 +7,7 @@
 
 
 input.inputIv {
-    width: 27px;
+    width: 24px;
 }
 
 th.finalStat {
@@ -20,18 +20,19 @@ th.spanIv{
 }
 
 button.submitBtn {
-    background-color: black;
+    background-color: red;
     color: white;
-    border:3px solid black;
+    border:3px solid red;
     border-radius: 4px;
     height: 30px;
     width: 100px;
+    font-weight: bold;
 }
 
 button.submitBtn:hover {
     cursor: pointer;
-    opacity: 0.8;
-    border:3px solid black;
+    border:3px solid rgb(177, 3, 3);
+    background-color: rgb(177, 3, 3);
 }
 
 div.result {

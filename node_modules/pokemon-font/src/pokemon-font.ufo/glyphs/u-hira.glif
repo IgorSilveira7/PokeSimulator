@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="u-hira" format="1">
+  <advance width="320"/>
+  <unicode hex="3046"/>
+  <note>
+    three
+  </note>
+  <outline>
+    <contour>
+      <point x="160" y="240" type="line"/>
+      <point x="160" y="280" type="line"/>
+      <point x="0" y="280" type="line"/>
+      <point x="0" y="240" type="line"/>
+    </contour>
+    <contour>
+      <point x="120" y="-40" type="line"/>
+      <point x="120" y="0" type="line"/>
+      <point x="40" y="0" type="line"/>
+      <point x="40" y="-40" type="line"/>
+    </contour>
+    <contour>
+      <point x="40" y="120" type="line"/>
+      <point x="40" y="160" type="line"/>
+      <point x="0" y="160" type="line"/>
+      <point x="0" y="120" type="line"/>
+    </contour>
+    <contour>
+      <point x="160" y="0" type="line"/>
+      <point x="160" y="40" type="line"/>
+      <point x="120" y="40" type="line"/>
+      <point x="120" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="160" y="160" type="line"/>
+      <point x="160" y="200" type="line"/>
+      <point x="40" y="200" type="line"/>
+      <point x="40" y="160" type="line"/>
+    </contour>
+    <contour>
+      <point x="200" y="40" type="line"/>
+      <point x="200" y="160" type="line"/>
+      <point x="160" y="160" type="line"/>
+      <point x="160" y="40" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-22 07:12:15 +0000</string>
+    </dict>
+  </lib>
+</glyph>

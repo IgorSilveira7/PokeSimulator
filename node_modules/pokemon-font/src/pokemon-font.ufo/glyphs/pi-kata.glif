@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="pi-kata" format="1">
+  <advance width="320"/>
+  <unicode hex="30D4"/>
+  <note>
+    g.71
+  </note>
+  <outline>
+    <contour>
+      <point x="40" y="0" type="line"/>
+      <point x="40" y="120" type="line"/>
+      <point x="160" y="120" type="line"/>
+      <point x="160" y="160" type="line"/>
+      <point x="40" y="160" type="line"/>
+      <point x="40" y="280" type="line"/>
+      <point x="0" y="280" type="line"/>
+      <point x="0" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="-40" type="line"/>
+      <point x="280" y="0" type="line"/>
+      <point x="40" y="0" type="line"/>
+      <point x="40" y="-40" type="line"/>
+    </contour>
+    <contour>
+      <point x="240" y="160" type="line"/>
+      <point x="240" y="200" type="line"/>
+      <point x="160" y="200" type="line"/>
+      <point x="160" y="160" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="280" type="line"/>
+      <point x="280" y="400" type="line"/>
+      <point x="160" y="400" type="line"/>
+      <point x="160" y="280" type="line"/>
+    </contour>
+    <contour>
+      <point x="200" y="360" type="line"/>
+      <point x="240" y="360" type="line"/>
+      <point x="240" y="320" type="line"/>
+      <point x="200" y="320" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-22 07:12:15 +0000</string>
+    </dict>
+  </lib>
+</glyph>

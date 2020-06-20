@@ -1,10 +1,10 @@
 import React from 'react';
-import DataElement from './components/dataElement/dataElement';
+import MainElement from './components/mainElement/mainElement';
 
 function App() {
   return (
     <div className="App">
-      <DataElement/>
+      <MainElement/>
     </div>
   );
 }

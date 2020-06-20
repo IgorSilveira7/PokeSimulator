@@ -1,0 +1,54 @@
+.mainButtonElement {
+    display: grid;
+    grid-template-areas:
+            'title' 
+            'inputNbuttonElement';
+    grid-template-rows: 1fr 70px;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.title {
+    grid-area: title;
+    padding: 15px;
+}
+
+.inputButtonElement {
+    grid-area: inputNbuttonElement;
+    display: grid;
+    grid-template-areas: 'input button';
+    grid-template-columns: 87% 13%;
+    justify-self: center;
+    width: 100%;
+}
+
+.mainInput {
+    grid-area: input;
+   height: 38px;
+   border: solid 0.5px lightgray;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   padding-left: 5px;
+}
+
+.mainButton {
+    grid-area: button;
+    height: 41px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: solid 0.5px red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    
+
+}
+
+.mainButton:hover {
+    cursor: pointer;
+    background-color: rgb(177, 3, 3);
+    border: solid 0.5px rgb(177, 3, 3);
+    
+}

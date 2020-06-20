@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'pokemon-font';
+  src: url('../fonts/pokemon-font.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pokemon-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pokemon-font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pokemon-font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/pokemon-font.ttf')  format('truetype') /* Safari, Android, iOS */
+  /* There is no SVG version of this font due to support being dropped in SVG 2 */
+}

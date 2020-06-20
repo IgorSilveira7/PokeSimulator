@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dot-kata" format="1">
+  <advance width="320"/>
+  <unicode hex="30FB"/>
+  <note>
+    p
+  </note>
+  <outline>
+    <contour>
+      <point x="200" y="80" type="line"/>
+      <point x="200" y="160" type="line"/>
+      <point x="120" y="160" type="line"/>
+      <point x="120" y="80" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-22 07:20:07 +0000</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,28 @@
+.mainElement{
+    display: grid;
+    grid-template-areas:    
+                'mainButtonElement'
+                'dataElement'
+                'statsElement'               
+                'baseStatsElement';
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+MainButtonElement {
+    grid-area: mainButtonElement;
+}
+
+DataElement {
+    grid-area: dataElement;
+}
+
+StatsElement {
+    grid-area: statsElement;
+}
+
+BaseStatsElement {
+    grid-area: baseStatsElement;
+}

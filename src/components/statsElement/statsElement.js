@@ -10,7 +10,9 @@ function StatsElement(props) {
             <table className='resultTable infosElement'>
                 <tbody>
 
-                    <tr><th className='infosElement' colSpan='2'>Stats do seu Pokemon:</th></tr>
+                    <tr>
+                        <th className='infosElement' colSpan='2'>Stats do seu Pokemon:</th>
+                    </tr>
 
                     <tr>
                         <th className='infosElement'>Hp:</th>

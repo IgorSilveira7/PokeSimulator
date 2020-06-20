@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asciicircum" format="1">
+  <advance width="320"/>
+  <unicode hex="005E"/>
+  <outline>
+    <contour>
+      <point x="200" y="322" type="line"/>
+      <point x="200" y="362" type="line"/>
+      <point x="160" y="362" type="line"/>
+      <point x="160" y="322" type="line"/>
+    </contour>
+    <contour>
+      <point x="80" y="282" type="line"/>
+      <point x="80" y="322" type="line"/>
+      <point x="40" y="322" type="line"/>
+      <point x="40" y="282" type="line"/>
+    </contour>
+    <contour>
+      <point x="120" y="322" type="line"/>
+      <point x="120" y="362" type="line"/>
+      <point x="80" y="362" type="line"/>
+      <point x="80" y="322" type="line"/>
+    </contour>
+    <contour>
+      <point x="160" y="362" type="line"/>
+      <point x="160" y="402" type="line"/>
+      <point x="120" y="402" type="line"/>
+      <point x="120" y="362" type="line"/>
+    </contour>
+    <contour>
+      <point x="240" y="282" type="line"/>
+      <point x="240" y="322" type="line"/>
+      <point x="200" y="322" type="line"/>
+      <point x="200" y="282" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-22 07:22:39 +0000</string>
+    </dict>
+  </lib>
+</glyph>
