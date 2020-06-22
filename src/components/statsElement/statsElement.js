@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
+import "./style.css";
 
 function StatsElement(props) {
   const { finalStats, imgUrl } = props;
+  const typeSpans = () => {
+    return props.types.map((e) => (
+      <span className={`typeLayout ${e.type.name}`}>
+        {e.type.name.slice(0, 1).toUpperCase() +
+          e.type.name.slice(1, e.type.name.length)}
+      </span>
+    ));
+  };
 
   return (
     <div className="result">
@@ -40,7 +49,10 @@ function StatsElement(props) {
         </tbody>
       </table>
 
-      <img className="resultImg" alt="pokemonImg" src={imgUrl} />
+      <div className="imgContainer">
+        <img className="resultImg" alt="pokemonImg" src={imgUrl} />
+        <span className="type">{typeSpans()}</span>
+      </div>
     </div>
   );
 }

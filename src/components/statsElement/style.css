@@ -1,0 +1,150 @@
+div.result {
+  display: grid;
+  grid-template-areas: "stats imgContainer";
+  grid-template-rows: 100%;
+  grid-template-columns: 40% 60%;
+}
+
+div.imgContainer {
+  grid-area: imgContainer;
+  display: grid;
+  grid-template-areas:
+    "img"
+    "type";
+  justify-items: center;
+  justify-content: center;
+}
+
+table.resultTable {
+  grid-area: stats;
+}
+
+img.resultImg {
+  grid-area: img;
+  justify-self: center;
+  height: 11rem;
+  width: 200px;
+  border: solid 4px red;
+  border-radius: 15px;
+  background-color: lightgrey;
+}
+
+span.type {
+  grid-area: type;
+  margin-top: 10px;
+}
+
+span.typeLayout {
+  padding: 2px 4px 2px 4px;
+  margin: 0px 3px 0px 3px;
+  border: solid 1px;
+  border-radius: 8px;
+}
+
+span.ghost {
+  border-color: #66b;
+  background-color: #66b;
+  color: white;
+}
+
+span.normal {
+  border-color: #aa9;
+  background-color: #aa9;
+  color: white;
+}
+
+span.fire {
+  border-color: #f42;
+  background-color: #f42;
+  color: white;
+}
+
+span.water {
+  border-color: #39f;
+  background-color: #39f;
+  color: white;
+}
+
+span.electric {
+  border-color: #fc3;
+  background-color: #fc3;
+  color: white;
+}
+
+span.grass {
+  border-color: #7c5;
+  background-color: #7c5;
+  color: white;
+}
+
+span.ice {
+  border-color: #6cf;
+  background-color: #6cf;
+  color: white;
+}
+
+span.fighting {
+  border-color: #b54;
+  background-color: #b54;
+  color: white;
+}
+
+span.poison {
+  border-color: #a59;
+  background-color: #a59;
+  color: white;
+}
+
+span.ground {
+  border-color: #db5;
+  background-color: #db5;
+  color: white;
+}
+
+span.flying {
+  border-color: #89f;
+  background-color: #89f;
+  color: white;
+}
+
+span.psychic {
+  border-color: #f59;
+  background-color: #f59;
+  color: white;
+}
+
+span.bug {
+  border-color: #ab2;
+  background-color: #ab2;
+  color: white;
+}
+
+span.rock {
+  border-color: #ba6;
+  background-color: #ba6;
+  color: white;
+}
+
+span.dragon {
+  border-color: #76e;
+  background-color: #76e;
+  color: white;
+}
+
+span.dark {
+  border-color: #754;
+  background-color: #754;
+  color: white;
+}
+
+span.steel {
+  border-color: #aab;
+  background-color: #aab;
+  color: white;
+}
+
+span.fairy {
+  border-color: #e9e;
+  background-color: #e9e;
+  color: white;
+}
