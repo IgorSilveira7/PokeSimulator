@@ -2,6 +2,21 @@ import React from "react";
 import "./style.css";
 
 function DataElement(props) {
+  function resetInputs() {
+    props.setAttackEv(0);
+    props.setAttackIv(0);
+    props.setDefenseEv(0);
+    props.setDefenseIv(0);
+    props.setHpEv(0);
+    props.setHpIv(0);
+    props.setSpAttackIv(0);
+    props.setSpAttackEv(0);
+    props.setSpDefenseEv(0);
+    props.setSpDefenseIv(0);
+    props.setSpeedEv(0);
+    props.setSpeedIv(0);
+  }
+
   return (
     <div className="dataElement">
       <table id="tableId" className="infosElement">
@@ -12,7 +27,7 @@ function DataElement(props) {
             </th>
             <td className="infosElement" colSpan="6">
               <input
-                className="inputIv"
+                className="inputLevel"
                 required
                 value={props.level}
                 onChange={(e) => props.setLevel(e.target.value)}
@@ -32,7 +47,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.hpIv}
                 onChange={(e) => props.setHpIv(e.target.value)}
                 type="text"
@@ -43,7 +57,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.attackIv}
                 onChange={(e) => props.setAttackIv(e.target.value)}
                 type="text"
@@ -54,7 +67,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.defenseIv}
                 onChange={(e) => props.setDefenseIv(e.target.value)}
                 type="text"
@@ -65,7 +77,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.spAttackIv}
                 onChange={(e) => props.setSpAttackIv(e.target.value)}
                 type="text"
@@ -76,7 +87,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.spDefenseIv}
                 onChange={(e) => props.setSpDefenseIv(e.target.value)}
                 type="text"
@@ -87,7 +97,6 @@ function DataElement(props) {
               <input
                 className="inputIv"
                 required
-                defaultValue="0"
                 value={props.speedIv}
                 onChange={(e) => props.setSpeedIv(e.target.value)}
                 type="text"
@@ -211,6 +220,10 @@ function DataElement(props) {
               >
                 {" "}
                 Calcular
+              </button>
+              <button className="resetBtn" type="submit" onClick={resetInputs}>
+                {" "}
+                Limpar
               </button>
             </th>
           </tr>

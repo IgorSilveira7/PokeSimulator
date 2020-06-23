@@ -14,6 +14,11 @@ input.inputIv {
   background-color: rgb(235, 235, 229);
 }
 
+input.inputLevel {
+  width: 30px;
+  background-color: rgb(235, 235, 229);
+}
+
 th.finalStat {
   width: 30px;
 }
@@ -31,10 +36,28 @@ button.submitBtn {
   height: 30px;
   width: 100px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 button.submitBtn:hover {
   cursor: pointer;
   border: 3px solid rgb(177, 3, 3);
   background-color: rgb(177, 3, 3);
+}
+
+button.resetBtn {
+  background-color: rgb(171, 171, 192);
+  color: white;
+  border: 3px solid rgb(171, 171, 192);
+  border-radius: 4px;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+button.resetBtn:hover {
+  cursor: pointer;
+  border: 3px solid rgb(125, 125, 146);
+  background-color: rgb(125, 125, 146);
 }
