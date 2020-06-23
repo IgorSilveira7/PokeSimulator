@@ -1,3 +1,8 @@
+.dataElement {
+  padding: 15px 10px 24px 10px;
+  background-color: rgb(235, 235, 229);
+}
+
 .infosElement {
   border: 1px solid black;
   border-collapse: collapse;
@@ -6,6 +11,7 @@
 
 input.inputIv {
   width: 24px;
+  background-color: rgb(235, 235, 229);
 }
 
 th.finalStat {

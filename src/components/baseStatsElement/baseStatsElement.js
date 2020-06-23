@@ -1,25 +1,33 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 function BaseStatsElement(props) {
   function setColor(value) {
-    let color = '';
+    let color = "";
 
     if (value <= 30) {
-      color = '#f34444';
+      color = "#f34444";
     } else if (value <= 60) {
-      color = '#ff7f0f';
+      color = "#ff7f0f";
     } else if (value <= 90) {
-      color = '#ffdd57';
+      color = "#ffdd57";
     } else if (value <= 120) {
-      color = '#a0e515';
+      color = "#a0e515";
     } else if (value <= 150) {
-      color = '#23cd5e';
+      color = "#23cd5e";
     } else {
-      color = '#00c2b8';
+      color = "#00c2b8";
     }
 
     return color;
+  }
+
+  function setBarWidth(value) {
+    let width = (value * 100) / 180;
+
+    if (width > 100) return "100%";
+
+    return `${width}%`;
   }
 
   return (
@@ -34,7 +42,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.hp * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.hp)}`,
                   backgroundColor: `${setColor(props.baseStats.hp)}`,
                 }}
               />
@@ -47,7 +55,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.atk * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.atk)}`,
                   backgroundColor: `${setColor(props.baseStats.atk)}`,
                 }}
               />
@@ -60,7 +68,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.def * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.def)}`,
                   backgroundColor: `${setColor(props.baseStats.def)}`,
                 }}
               />
@@ -73,7 +81,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.spAtk * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.spAtk)}`,
                   backgroundColor: `${setColor(props.baseStats.spAtk)}`,
                 }}
               />
@@ -86,7 +94,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.spDef * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.spDef)}`,
                   backgroundColor: `${setColor(props.baseStats.spDef)}`,
                 }}
               />
@@ -99,7 +107,7 @@ function BaseStatsElement(props) {
               <div
                 className="barchartBar"
                 style={{
-                  width: `${(props.baseStats.speed * 100) / 180}%`,
+                  width: `${setBarWidth(props.baseStats.speed)}`,
                   backgroundColor: `${setColor(props.baseStats.speed)}`,
                 }}
               />

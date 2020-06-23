@@ -1,10 +1,10 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 function DataElement(props) {
   return (
-    <div>
-      <table className="infosElement">
+    <div className="dataElement">
+      <table id="tableId" className="infosElement">
         <tbody>
           <tr>
             <th className="infosElement" colSpan="1">
@@ -12,11 +12,12 @@ function DataElement(props) {
             </th>
             <td className="infosElement" colSpan="6">
               <input
+                className="inputIv"
                 required
                 value={props.level}
                 onChange={(e) => props.setLevel(e.target.value)}
                 type="text"
-              />{' '}
+              />{" "}
             </td>
           </tr>
           <tr>
@@ -27,60 +28,66 @@ function DataElement(props) {
 
           <tr>
             <th className="spanIv infosElement">
-              Hp:{' '}
+              Hp:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.hpIv}
                 onChange={(e) => props.setHpIv(e.target.value)}
                 type="text"
               />
             </th>
             <th className="spanIv infosElement">
-              Atk:{' '}
+              Atk:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.attackIv}
                 onChange={(e) => props.setAttackIv(e.target.value)}
                 type="text"
               />
             </th>
             <th className="spanIv infosElement">
-              Def:{' '}
+              Def:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.defenseIv}
                 onChange={(e) => props.setDefenseIv(e.target.value)}
                 type="text"
               />
             </th>
             <th className="spanIv infosElement">
-              Sp Atk:{' '}
+              Sp Atk:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.spAttackIv}
                 onChange={(e) => props.setSpAttackIv(e.target.value)}
                 type="text"
               />
             </th>
             <th className="spanIv infosElement">
-              Sp Def:{' '}
+              Sp Def:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.spDefenseIv}
                 onChange={(e) => props.setSpDefenseIv(e.target.value)}
                 type="text"
               />
             </th>
             <th className="spanIv infosElement">
-              Speed:{' '}
+              Speed:{" "}
               <input
                 className="inputIv"
                 required
+                defaultValue="0"
                 value={props.speedIv}
                 onChange={(e) => props.setSpeedIv(e.target.value)}
                 type="text"
@@ -96,7 +103,7 @@ function DataElement(props) {
 
           <tr>
             <th className="spanIv infosElement">
-              Hp:{' '}
+              Hp:{" "}
               <input
                 className="inputIv"
                 required
@@ -106,7 +113,7 @@ function DataElement(props) {
               />
             </th>
             <th className="spanIv infosElement">
-              Atk:{' '}
+              Atk:{" "}
               <input
                 className="inputIv"
                 required
@@ -116,7 +123,7 @@ function DataElement(props) {
               />
             </th>
             <th className="spanIv infosElement">
-              Def:{' '}
+              Def:{" "}
               <input
                 className="inputIv"
                 required
@@ -126,7 +133,7 @@ function DataElement(props) {
               />
             </th>
             <th className="spanIv infosElement">
-              Sp Atk:{' '}
+              Sp Atk:{" "}
               <input
                 className="inputIv"
                 required
@@ -136,7 +143,7 @@ function DataElement(props) {
               />
             </th>
             <th className="spanIv infosElement">
-              Sp Def:{' '}
+              Sp Def:{" "}
               <input
                 className="inputIv"
                 required
@@ -146,7 +153,7 @@ function DataElement(props) {
               />
             </th>
             <th className="spanIv infosElement">
-              Speed:{' '}
+              Speed:{" "}
               <input
                 className="inputIv"
                 required
@@ -196,13 +203,13 @@ function DataElement(props) {
 
           <tr>
             <th className="infosElement" colSpan="6">
-              {' '}
+              {" "}
               <button
                 className="submitBtn"
                 type="submit"
                 onClick={props.handlerSubmit}
               >
-                {' '}
+                {" "}
                 Calcular
               </button>
             </th>

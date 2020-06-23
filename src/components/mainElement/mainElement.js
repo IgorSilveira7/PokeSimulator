@@ -254,8 +254,6 @@ function MainElement() {
         />
       )}
 
-      <hr />
-
       {showImg && (
         <StatsElement
           finalStats={finalStats}
@@ -264,8 +262,6 @@ function MainElement() {
           imgUrl={imgUrl}
         />
       )}
-
-      <br />
 
       {showImg && <BaseStatsElement baseStats={baseStats} />}
     </div>

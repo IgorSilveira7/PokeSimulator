@@ -1,28 +1,27 @@
-.mainElement{
-    display: grid;
-    grid-template-areas:    
-                'mainButtonElement'
-                'dataElement'
-                'statsElement'               
-                'baseStatsElement';
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-    
+.mainElement {
+  display: grid;
+  grid-template-areas:
+    "mainButtonElement"
+    "dataElement"
+    "statsElement"
+    "baseStatsElement";
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
 MainButtonElement {
-    grid-area: mainButtonElement;
+  grid-area: mainButtonElement;
 }
 
 DataElement {
-    grid-area: dataElement;
+  grid-area: dataElement;
 }
 
 StatsElement {
-    grid-area: statsElement;
+  grid-area: statsElement;
 }
 
 BaseStatsElement {
-    grid-area: baseStatsElement;
+  grid-area: baseStatsElement;
 }

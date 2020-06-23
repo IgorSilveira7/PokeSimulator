@@ -3,6 +3,8 @@ div.result {
   grid-template-areas: "stats imgContainer";
   grid-template-rows: 100%;
   grid-template-columns: 40% 60%;
+  padding: 10px 10px 24px 10px;
+  background-color: rgb(235, 235, 229);
 }
 
 div.imgContainer {
@@ -24,9 +26,9 @@ img.resultImg {
   justify-self: center;
   height: 11rem;
   width: 200px;
-  border: solid 4px red;
+  border: solid 1px gray;
   border-radius: 15px;
-  background-color: lightgrey;
+  background-color: rgb(235, 235, 229);
 }
 
 span.type {
@@ -38,7 +40,10 @@ span.typeLayout {
   padding: 2px 4px 2px 4px;
   margin: 0px 3px 0px 3px;
   border: solid 1px;
-  border-radius: 8px;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0);
+  width: 66px;
+  height: 24px;
 }
 
 span.ghost {
