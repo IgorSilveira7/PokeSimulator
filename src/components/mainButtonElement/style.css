@@ -103,3 +103,17 @@
   background-color: rgb(177, 3, 3);
   border: solid 0.5px rgb(177, 3, 3);
 }
+
+@media (max-width: 650px) {
+  .title {
+    width: 90%;
+  }
+
+  img {
+    width: inherit;
+  }
+
+  .inputButtonElement {
+    width: 80%;
+  }
+}

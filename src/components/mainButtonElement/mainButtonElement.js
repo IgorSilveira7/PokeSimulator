@@ -37,12 +37,14 @@ function MainButtonElement({ name, setName, handlerSubmit }) {
 
   return (
     <div className="mainButtonElement">
-      <img
-        className="title"
-        src="https://fontmeme.com/permalink/200620/63003a6b38173454d2a74aa30a82d7f8.png"
-        alt="fonte-de-pokemon"
-        border="0"
-      />
+      <div className="title">
+        <img
+          className="titleImg"
+          src="https://fontmeme.com/permalink/200620/63003a6b38173454d2a74aa30a82d7f8.png"
+          alt="fonte-de-pokemon"
+          border="0"
+        />
+      </div>
 
       <div className="inputButtonElement">
         <Autosuggest
