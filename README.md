@@ -1,19 +1,21 @@
 # PokeSimulator
 
-Calcula os stats finais de um Pokemon a partir dos dados(level, IV, EV, Nature) fornecidos.
-Também fornece algumas informações sobre o Pokemon.
+A ideia da aplicação é calcular os stats finais de um Pokemon a partir dos dados(level, IV, EV, Nature) fornecidos, lhe deixando livre para simular diferentes builds no mesmo pokemon. Além disso, também fornecer algumas informações relevantes sobre o Pokemon.
+
+## Acesse em:
+https://pokesimulator.netlify.app/
 
 
-## Available Scripts
+## Scripts disponíveis
 
-In the project directory, you can run:
+No diretório do projeto, você pode executar:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento.<br />
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições.<br />
+Você também verá quaisquer erros no console.
 
 
