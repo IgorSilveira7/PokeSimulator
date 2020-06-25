@@ -115,5 +115,6 @@
 
   .inputButtonElement {
     width: 80%;
+    grid-template-columns: 75% 25%;
   }
 }
