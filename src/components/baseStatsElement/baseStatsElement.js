@@ -31,7 +31,7 @@ function BaseStatsElement(props) {
   }
 
   return (
-    <div className="baseStats">
+    <div className="baseStatsElement">
       <h2>Stats Base</h2>
       <table className="baseStatsTable">
         <tbody>

@@ -177,10 +177,11 @@ function DataElement(props) {
             <th className="infosElement" colSpan="6">
               <label>Nature: </label>
               <select
-                id="nature"
+                className="nature"
                 value={props.nature}
                 onChange={(e) => props.setNature(e.target.value)}
               >
+                <option value="none">----</option>
                 <option value="adamant">Adamant</option>
                 <option value="bashful">Bashful</option>
                 <option value="brave">Brave</option>

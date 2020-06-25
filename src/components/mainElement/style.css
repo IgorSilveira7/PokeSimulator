@@ -2,6 +2,7 @@
   display: grid;
   grid-template-areas:
     "mainButtonElement"
+    "error"
     "dataElement"
     "statsElement"
     "baseStatsElement";
@@ -10,18 +11,36 @@
   justify-content: center;
 }
 
-MainButtonElement {
+.errorContainer {
+  grid-area: error;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgb(219, 159, 159);
+}
+
+.error {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: rgb(104, 3, 3);
+  font-weight: bold;
+}
+
+.mainButtonElement {
   grid-area: mainButtonElement;
 }
 
-DataElement {
+.dataElement {
   grid-area: dataElement;
 }
 
-StatsElement {
+.statsElement {
   grid-area: statsElement;
 }
 
-BaseStatsElement {
+.baseStatsElement {
   grid-area: baseStatsElement;
 }

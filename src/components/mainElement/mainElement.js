@@ -10,7 +10,7 @@ function MainElement() {
   const [pokemon, setPokemon] = useState({});
   const [name, setName] = useState("");
   const [level, setLevel] = useState(100);
-  const [nature, setNature] = useState("adamant");
+  const [nature, setNature] = useState("none");
   const [hpIv, setHpIv] = useState(0);
   const [attackIv, setAttackIv] = useState(0);
   const [defenseIv, setDefenseIv] = useState(0);
@@ -28,11 +28,19 @@ function MainElement() {
   const [baseStats, setbaseStats] = useState({});
   const [imgUrl, setImgUrl] = useState("");
   const [showImg, setShowImg] = useState(false);
+  const [error, setError] = useState(false);
+  const [nameError, setNameError] = useState("");
 
   async function handlerSubmit(e) {
-    e.preventDefault();
-    const response = await api.get(`/${name.toLowerCase()}`);
-    setPokemon(response.data);
+    try {
+      e.preventDefault();
+      const response = await api.get(`/${name.toLowerCase()}`);
+      setError(false);
+      setPokemon(response.data);
+    } catch (error) {
+      setError(true);
+      setNameError(name);
+    }
   }
 
   useEffect(() => {
@@ -220,7 +228,15 @@ function MainElement() {
         handlerSubmit={handlerSubmit}
       />
 
-      {showImg && (
+      {error && (
+        <div className="errorContainer">
+          <span className="error">
+            O pokemon "{nameError}" não existe na nossa pokedex!
+          </span>
+        </div>
+      )}
+
+      {showImg && !error && (
         <DataElement
           level={level}
           setLevel={setLevel}
@@ -254,7 +270,7 @@ function MainElement() {
         />
       )}
 
-      {showImg && (
+      {showImg && !error && (
         <StatsElement
           finalStats={finalStats}
           name={name}
@@ -263,7 +279,7 @@ function MainElement() {
         />
       )}
 
-      {showImg && <BaseStatsElement baseStats={baseStats} />}
+      {showImg && !error && <BaseStatsElement baseStats={baseStats} />}
     </div>
   );
 }

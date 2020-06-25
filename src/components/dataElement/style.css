@@ -1,4 +1,7 @@
 .dataElement {
+  display: grid;
+  align-items: center;
+  justify-content: center;
   padding: 15px 10px 24px 10px;
   background-color: rgb(235, 235, 229);
 }
@@ -24,8 +27,8 @@ th.finalStat {
 }
 
 th.spanIv {
-  width: 87px;
   height: 25px;
+  font-size: 1rem;
 }
 
 button.submitBtn {
@@ -60,4 +63,18 @@ button.resetBtn:hover {
   cursor: pointer;
   border: 3px solid rgb(125, 125, 146);
   background-color: rgb(125, 125, 146);
+}
+
+.nature {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  width: 20%;
+  height: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5em;
+  background-color: rgb(235, 235, 229);
+  border: 1px solid black;
 }
