@@ -5,6 +5,7 @@
     "error"
     "dataElement"
     "statsElement"
+    "abilities"
     "baseStatsElement";
   grid-template-rows: 1fr;
   align-items: center;
@@ -39,6 +40,10 @@
 
 .statsElement {
   grid-area: statsElement;
+}
+
+.abilities {
+  grid-area: abilities;
 }
 
 .baseStatsElement {
