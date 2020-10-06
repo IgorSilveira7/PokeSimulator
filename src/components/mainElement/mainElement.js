@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import api from "../../service/index";
 import StatsElement from "../statsElement/statsElement";
@@ -5,6 +6,7 @@ import BaseStatsElement from "../baseStatsElement/baseStatsElement";
 import DataElement from "../dataElement/dataElement";
 import MainButtonElement from "../mainButtonElement/mainButtonElement";
 import "./style.css";
+import Abilities from "../abilities";
 
 function MainElement() {
   const [pokemon, setPokemon] = useState({});
@@ -30,6 +32,27 @@ function MainElement() {
   const [showImg, setShowImg] = useState(false);
   const [error, setError] = useState(false);
   const [nameError, setNameError] = useState("");
+  const [abilities, setAbilities] = useState([]);
+
+  async function getAbilities(abilities) {
+    const urls_descriptions = abilities.map((a) => {
+      return axios.get(a.ability.url);
+    });
+
+    Promise.all(urls_descriptions).then((values) => {
+      values.map((value, idx) => {
+        const d = value.data.effect_entries.filter(
+          (effect) => effect.language.name === "en"
+        )[0].short_effect;
+
+        const abilities_aux = [...abilities];
+        abilities_aux[idx].description = d;
+
+        setAbilities(abilities_aux);
+        return value;
+      });
+    });
+  }
 
   async function handlerSubmit(e) {
     try {
@@ -37,6 +60,7 @@ function MainElement() {
       const response = await api.get(`/${name.toLowerCase()}`);
       setError(false);
       setPokemon(response.data);
+      await getAbilities(response.data.abilities);
     } catch (error) {
       setError(true);
       setNameError(name);
@@ -54,6 +78,7 @@ function MainElement() {
         hp: pokemon.stats[0].base_stat,
       };
 
+      setAbilities(pokemon.abilities);
       setbaseStats(pokemonBases);
       setTypes(pokemon.types);
       setFinalStats(calculaStats(pokemonBases));
@@ -278,6 +303,8 @@ function MainElement() {
           imgUrl={imgUrl}
         />
       )}
+
+      {showImg && !error && <Abilities abilities={abilities} />}
 
       {showImg && !error && <BaseStatsElement baseStats={baseStats} />}
     </div>

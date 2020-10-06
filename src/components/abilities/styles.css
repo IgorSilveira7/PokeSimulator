@@ -1,0 +1,9 @@
+div.abilities {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 24px 10px;
+  background-color: rgb(235, 235, 229);
+  max-width: 650px;
+}
